@@ -18,6 +18,11 @@
 		773695B7271DCF14007615CD /* SushiNekoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773695B6271DCF14007615CD /* SushiNekoTests.swift */; };
 		773695C1271DCF14007615CD /* SushiNekoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773695C0271DCF14007615CD /* SushiNekoUITests.swift */; };
 		773695C3271DCF14007615CD /* SushiNekoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773695C2271DCF14007615CD /* SushiNekoUITestsLaunchTests.swift */; };
+		773695D2271DCF95007615CD /* assets.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 773695D1271DCF95007615CD /* assets.atlas */; };
+		773695D5271DCFA2007615CD /* sfx_swipe.caf in Resources */ = {isa = PBXBuildFile; fileRef = 773695D4271DCFA2007615CD /* sfx_swipe.caf */; };
+		773695D7271DD361007615CD /* msButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773695D6271DD361007615CD /* msButton.swift */; };
+		773695DB271DE8C6007615CD /* SushiPiece.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773695DA271DE8C6007615CD /* SushiPiece.swift */; };
+		773695DD271DF5A3007615CD /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773695DC271DF5A3007615CD /* Character.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +57,11 @@
 		773695BC271DCF14007615CD /* SushiNekoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SushiNekoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		773695C0271DCF14007615CD /* SushiNekoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SushiNekoUITests.swift; sourceTree = "<group>"; };
 		773695C2271DCF14007615CD /* SushiNekoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SushiNekoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		773695D1271DCF95007615CD /* assets.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = assets.atlas; path = ../../assets.atlas; sourceTree = "<group>"; };
+		773695D4271DCFA2007615CD /* sfx_swipe.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = sfx_swipe.caf; sourceTree = "<group>"; };
+		773695D6271DD361007615CD /* msButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = msButton.swift; sourceTree = "<group>"; };
+		773695DA271DE8C6007615CD /* SushiPiece.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SushiPiece.swift; sourceTree = "<group>"; };
+		773695DC271DF5A3007615CD /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,12 +114,17 @@
 			children = (
 				7736959C271DCF11007615CD /* AppDelegate.swift */,
 				7736959E271DCF11007615CD /* GameScene.sks */,
+				773695DC271DF5A3007615CD /* Character.swift */,
 				773695A0271DCF11007615CD /* Actions.sks */,
 				773695A2271DCF11007615CD /* GameScene.swift */,
+				773695DA271DE8C6007615CD /* SushiPiece.swift */,
 				773695A4271DCF11007615CD /* GameViewController.swift */,
 				773695A6271DCF11007615CD /* Main.storyboard */,
 				773695A9271DCF13007615CD /* Assets.xcassets */,
+				773695D3271DCFA2007615CD /* SFX */,
+				773695D1271DCF95007615CD /* assets.atlas */,
 				773695AB271DCF13007615CD /* LaunchScreen.storyboard */,
+				773695D6271DD361007615CD /* msButton.swift */,
 			);
 			path = SushiNeko;
 			sourceTree = "<group>";
@@ -129,6 +144,15 @@
 				773695C2271DCF14007615CD /* SushiNekoUITestsLaunchTests.swift */,
 			);
 			path = SushiNekoUITests;
+			sourceTree = "<group>";
+		};
+		773695D3271DCFA2007615CD /* SFX */ = {
+			isa = PBXGroup;
+			children = (
+				773695D4271DCFA2007615CD /* sfx_swipe.caf */,
+			);
+			name = SFX;
+			path = ../../SFX;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,8 +261,10 @@
 			files = (
 				773695A8271DCF11007615CD /* Main.storyboard in Resources */,
 				7736959F271DCF11007615CD /* GameScene.sks in Resources */,
+				773695D2271DCF95007615CD /* assets.atlas in Resources */,
 				773695AA271DCF13007615CD /* Assets.xcassets in Resources */,
 				773695AD271DCF13007615CD /* LaunchScreen.storyboard in Resources */,
+				773695D5271DCFA2007615CD /* sfx_swipe.caf in Resources */,
 				773695A1271DCF11007615CD /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,7 +291,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				773695A3271DCF11007615CD /* GameScene.swift in Sources */,
+				773695D7271DD361007615CD /* msButton.swift in Sources */,
 				773695A5271DCF11007615CD /* GameViewController.swift in Sources */,
+				773695DD271DF5A3007615CD /* Character.swift in Sources */,
+				773695DB271DE8C6007615CD /* SushiPiece.swift in Sources */,
 				7736959D271DCF11007615CD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -449,9 +478,11 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = NO;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -461,7 +492,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -476,9 +507,11 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = NO;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -488,7 +521,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
